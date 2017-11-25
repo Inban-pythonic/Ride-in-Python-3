@@ -1,0 +1,103 @@
+#1 Basics of dictionaries
+
+'''fruitbasket = { "apple":3, "banana":5, "cherry":50 }
+print(fruitbasket["cheery"])'''
+
+#1.1 use for loop:
+
+'''fruitbasket = { "apple":3, "banana":5, "cherry":50 }
+for key in fruitbasket:
+    print("{}:{}".format(key, fruitbasket[key]))'''
+
+#1.2 Access a dictionary element using a key
+
+'''fruitbasket = { "apple":3, "banana":5, "cherry":50 }
+print(fruitbasket)
+fruitbasket["mango"] = 1
+print(fruitbasket)'''
+
+#1.3 Deleting an item from a dictionary using del keyword:
+'''fruitbasket = { "apple":3, "banana":5, "cherry":50 }
+print(fruitbasket)
+del fruitbasket["banana"]
+print(fruitbasket)'''
+
+#2 Dictionary Methods:
+#2.1 copy()
+'''fruitbasket = { "apple":3, "banana":5, "cherry":50 }
+fruitbasketalias = fruitbasket
+fruitbasketcopy = fruitbasket.copy()
+
+print(id(fruitbasket))
+print(id(fruitbasketalias))
+print(id(fruitbasketcopy))'''
+
+#2.2 keys(), values(), and items()
+'''fruitbasket = { "apple":3, "banana":5, "cherry":50 }
+print(list(fruitbasket.keys()))
+print(list(fruitbasket.values()))
+print(list(fruitbasket.items()))'''
+
+#2.3 use for loop max(), min(), sum().
+'''fruitbasket = {"apple":3, "banana":5, "cherry":50, "durian":0, "mango":2}
+for key in fruitbasket.keys():
+    print("{}:{}".format(key, fruitbasket[key]))
+print(sum(fruitbasket.values()))'''
+
+#2.4 get()
+'''fruitbasket = { "apple":3, "banana":5, "cherry":50, "durian":0, "mango":2 }
+apple = fruitbasket.get("apple")
+if apple:
+    print("apple is in the basket")
+else:
+    print("no apples in the basket")
+orange = fruitbasket.get("orange")
+if orange:
+    print("orange is in the basket")
+else:
+    print("no oranges in the basket")
+banana = fruitbasket.get("banana", 0)
+print("number fo bananas in the basket:", banana)
+
+strawberry = fruitbasket.get("strawberry", 0)
+print("number of strawberrries in the basket:", strawberry)'''
+                         
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
